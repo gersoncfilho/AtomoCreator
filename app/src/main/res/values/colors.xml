@@ -7,4 +7,6 @@
     <color name="proton">#f70202</color>
     <color name="neutron">#ababab</color>
     <color name="eletron">#001aff</color>
+
+    <color name="core">#c5cae9</color>
 </resources>

@@ -4,18 +4,33 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="gersondeveloper.com.br.atomocreator.MainActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2">
-    </LinearLayout>
+        android:layout_weight="2"
+        android:orientation="horizontal" android:padding="10dp">
+
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/core_container"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/core"
+            android:layout_centerInParent="true" android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center" android:background="@drawable/core">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,45 +42,51 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/proton_container"
+                android:gravity="center">
                 <View
                     android:id="@+id/proton"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/proton">
                 </View>
-            </FrameLayout>
+            </LinearLayout>
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/neutron_container"
+                android:gravity="center">
                 <View
                     android:id="@+id/neutron"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/neutron"
                     >
                 </View>
-            </FrameLayout>
+            </LinearLayout>
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/eletron_container"
+                android:gravity="center">
                 <View
                     android:id="@+id/eletron"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
                     android:layout_gravity="center"
                     android:background="@drawable/eletron">
                 </View>
-            </FrameLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
